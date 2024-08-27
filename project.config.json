@@ -1,0 +1,35 @@
+{
+  "appid": "wx4753b10d02a4d067",
+  "compileType": "miniprogram",
+  "libVersion": "3.5.0",
+  "packOptions": {
+    "ignore": [
+      {
+        "type": "folder",
+        "value": "static/images"
+      }
+    ],
+    "include": []
+  },
+  "setting": {
+    "coverView": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "enhance": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
+    "ignoreDevUnusedFiles": false,
+    "ignoreUploadUnusedFiles": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    }
+  },
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 4
+  }
+}

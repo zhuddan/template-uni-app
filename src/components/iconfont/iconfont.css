@@ -1,0 +1,59 @@
+/* Generated IconType... */
+@font-face {
+  font-family: "iconfont"; 
+  src: url('./iconfont.ttf?t=___') format('truetype');
+}
+  
+.iconfont {
+  font-family: "iconfont" !important;
+  text-decoration: none;
+  text-align: center;
+}
+
+.icon-lock:before {
+  content: "\e600";
+}
+
+.icon-user:before {
+  content: "\e6c0";
+}
+
+.icon-loop:before {
+  content: "\e66d";
+}
+
+.icon-plus:before {
+  content: "\e61f";
+}
+
+.icon-close1:before {
+  content: "\e630";
+}
+
+.icon-search:before {
+  content: "\e631";
+}
+
+.icon-edit:before {
+  content: "\e685";
+}
+
+.icon-telphone:before {
+  content: "\e6f8";
+}
+
+.icon-left:before {
+  content: "\e62b";
+}
+
+.icon-right:before {
+  content: "\e62a";
+}
+
+.icon-close:before {
+  content: "\e609";
+}
+
+.icon-menu-line:before {
+  content: "\e653";
+}

@@ -1,0 +1,13 @@
+/* Generated IconType... */
+@font-face {
+  font-family: "iconfont"; 
+  src: url('./iconfont.ttf?t=___') format('truetype');
+}
+  
+.iconfont {
+  font-family: "iconfont" !important;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* [%- content %] */

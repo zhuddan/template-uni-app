@@ -1,0 +1,93 @@
+{
+  "id": "4585944",
+  "name": "study",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1130",
+      "name": "锁定",
+      "font_class": "lock",
+      "unicode": "e600",
+      "unicode_decimal": 58880
+    },
+    {
+      "icon_id": "859275",
+      "name": "用户名",
+      "font_class": "user",
+      "unicode": "e6c0",
+      "unicode_decimal": 59072
+    },
+    {
+      "icon_id": "12661354",
+      "name": "加载",
+      "font_class": "loop",
+      "unicode": "e66d",
+      "unicode_decimal": 58989
+    },
+    {
+      "icon_id": "36802682",
+      "name": "ic_add",
+      "font_class": "plus",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "36852911",
+      "name": "ic_close 1",
+      "font_class": "close1",
+      "unicode": "e630",
+      "unicode_decimal": 58928
+    },
+    {
+      "icon_id": "36878354",
+      "name": "ic_search",
+      "font_class": "search",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "37258652",
+      "name": "编辑16",
+      "font_class": "edit",
+      "unicode": "e685",
+      "unicode_decimal": 59013
+    },
+    {
+      "icon_id": "39102591",
+      "name": "ic-电话",
+      "font_class": "telphone",
+      "unicode": "e6f8",
+      "unicode_decimal": 59128
+    },
+    {
+      "icon_id": "36829413",
+      "name": "ic_left",
+      "font_class": "left",
+      "unicode": "e62b",
+      "unicode_decimal": 58923
+    },
+    {
+      "icon_id": "36829414",
+      "name": "ic_right",
+      "font_class": "right",
+      "unicode": "e62a",
+      "unicode_decimal": 58922
+    },
+    {
+      "icon_id": "4880431",
+      "name": "关闭",
+      "font_class": "close",
+      "unicode": "e609",
+      "unicode_decimal": 58889
+    },
+    {
+      "icon_id": "6265237",
+      "name": "菜单",
+      "font_class": "menu-line",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    }
+  ]
+}

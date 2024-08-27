@@ -1,0 +1,31 @@
+{
+  "globalStyle": {
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "template-uni-app",
+    "navigationBarBackgroundColor": "#459d76",
+    "backgroundColor": "#F8F8F8"
+  },
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+    }
+  },
+  "pages": [
+    {
+      "path": "pages/home/index",
+      "type": "home",
+      "style": {
+        "navigationBarTitleText": "template-uni-app"
+      }
+    },
+    {
+      "path": "pages/mine/index",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "home"
+      }
+    }
+  ],
+  "subPackages": []
+}
