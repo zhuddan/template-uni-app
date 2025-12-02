@@ -2,7 +2,7 @@
 import type { ScrollViewOnRefresherabortEvent, ScrollViewOnRefresherpullingEvent, ScrollViewOnRefresherrefreshEvent, ScrollViewOnRefresherrestoreEvent, ScrollViewOnScrolltolowerEvent } from '@uni-helper/uni-app-types'
 import { computed, ref, useSlots } from 'vue'
 import { NAV_BAR_HEIGHT, getStatusBarHeight } from '../nav-bar/nav-bar'
-import type { ListActions, ListDataState } from '@/compositions/useListData'
+import type { ListActions, ListDataState } from '@/composables/useListData'
 
 import { getNumericValue, rpxToPx } from '@/utils/helpers'
 

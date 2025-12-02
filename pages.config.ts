@@ -41,5 +41,14 @@ export default defineUniPages({
     },
   },
   // 分包自动导入配置请在vite中 UniPages 配置
-  // subPackages: [],
+  subPackages: [
+    {
+      root: 'feature',
+      pages: [
+        {
+          path: 'pages/sub-test/index',
+        },
+      ],
+    },
+  ],
 })

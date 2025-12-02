@@ -167,7 +167,8 @@ export class Router<T extends object = object> {
   }
 
   ready(cb?: (option: T) => void) {
-    cb && this._readyCallback.push(cb)
+    if (cb)
+      this._readyCallback.push(cb)
   }
 
   runReady(option: T) {

@@ -1,10 +1,4 @@
-import {
-  ContentTypeEnum,
-  RequestMethodsEnum,
-  UniRequest,
-  type UniRequestConfig,
-} from '@zd~/request'
-import type { ResponseResult } from '@zd~/request/shared'
+import { ContentTypeEnum, RequestMethodsEnum, UniRequest, type UniRequestConfig } from './core'
 import {
   type HttpRequestUserConfig,
   tokenKey,
@@ -22,7 +16,7 @@ import {
 } from '@/utils/index'
 
 export const request = new UniRequest<HttpRequestUserConfig>({
-  baseUrl: API_URL,
+  baseURL: API_URL,
   timeout: 60 * 1000,
   header: {
     'Content-Type': ContentTypeEnum.JSON,
@@ -38,7 +32,7 @@ export const request = new UniRequest<HttpRequestUserConfig>({
 
     // 1. 处理 url 不是 http 或者 https 开头则加上 baseUrl
     if (!isLink(config.url))
-      config.url = `${config.baseUrl || ''}${config.url}`
+      config.url = `${config.baseURL || ''}${config.url}`
 
     if (config.params !== undefined) {
       if (config.method?.toUpperCase() === RequestMethodsEnum.GET) {
@@ -66,7 +60,7 @@ export const request = new UniRequest<HttpRequestUserConfig>({
      * token
      */
     const token = getCacheToken()
-    const whiteUrlPrefix = `${config.baseUrl}/api/`
+    const whiteUrlPrefix = `${config.baseURL}/api/`
     const isWhiteUrl = config.url!.startsWith(whiteUrlPrefix)
     const withToken = config.withToken && `${config.withToken}` === 'true'
 

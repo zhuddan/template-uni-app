@@ -1,8 +1,8 @@
 <route  lang="json" type="page">
-    {
-      "style": { "navigationBarTitleText": "子包测试页" }
-    }
-  </route>
+  {
+    "style": { "navigationBarTitleText": "子包测试页" }
+  }
+</route>
 
 <script setup lang="ts">
 import Dialog from './component/dialog.vue'

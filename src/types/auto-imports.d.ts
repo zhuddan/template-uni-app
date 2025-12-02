@@ -7,13 +7,10 @@ export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
   const Router: typeof import('../utils/router')['Router']
-  const SftpQueue: typeof import('../utils/sftp')['SftpQueue']
-  const SftpTool: typeof import('../utils/sftp')['SftpTool']
   const appGlobalProperties: typeof import('../utils/app-global-properties')['appGlobalProperties']
-  const autoUploadStatic: typeof import('../utils/upload')['autoUploadStatic']
   const bg: typeof import('../utils/helpers/logger')['bg']
   const clearCache: typeof import('../utils/cache/index')['clearCache']
-  const cloneFnJSON: typeof import('../compositions/useVModel/index')['cloneFnJSON']
+  const cloneFnJSON: typeof import('../composables/useVModel/index')['cloneFnJSON']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
   const createArrayProp: typeof import('../utils/helpers/props')['createArrayProp']
@@ -23,7 +20,6 @@ declare global {
   const createRequiredProp: typeof import('../utils/helpers/props')['createRequiredProp']
   const createStringProp: typeof import('../utils/helpers/props')['createStringProp']
   const createStyleProp: typeof import('../utils/helpers/props')['createStyleProp']
-  const createUUID: typeof import('../utils/helpers/createUUID')['createUUID']
   const customRef: typeof import('vue')['customRef']
   const debounce: typeof import('../utils/helpers/debounce-throttle')['debounce']
   const defineAsyncComponent: typeof import('vue')['defineAsyncComponent']
@@ -37,7 +33,7 @@ declare global {
   const getCurrentScope: typeof import('vue')['getCurrentScope']
   const getLoadingStatus: typeof import('../utils/ui/index')['getLoadingStatus']
   const getNumericValue: typeof import('../utils/helpers/getNumericValue')['getNumericValue']
-  const getPageExpose: typeof import('../compositions/usePageExpose/index')['getPageExpose']
+  const getPageExpose: typeof import('../composables/usePageExpose/index')['getPageExpose']
   const getParams: typeof import('../utils/helpers/params')['getParams']
   const getSafeAreaHeight: typeof import('../utils/helpers/system')['getSafeAreaHeight']
   const getTabbarHeight: typeof import('../utils/helpers/system')['getTabbarHeight']
@@ -82,7 +78,7 @@ declare global {
   const joinTimestamp: typeof import('../utils/helpers/joinTimestamp')['joinTimestamp']
   const logger: typeof import('../utils/helpers/logger')['logger']
   const mapStyle: typeof import('../utils/helpers/logger')['mapStyle']
-  const maps: typeof import('../compositions/usePageExpose/index')['maps']
+  const maps: typeof import('../composables/usePageExpose/index')['maps']
   const markRaw: typeof import('vue')['markRaw']
   const mergeDeep: typeof import('../utils/helpers/mergeDeep')['mergeDeep']
   const nextTick: typeof import('vue')['nextTick']
@@ -162,13 +158,13 @@ declare global {
   const useAttrs: typeof import('vue')['useAttrs']
   const useCssModule: typeof import('vue')['useCssModule']
   const useCssVars: typeof import('vue')['useCssVars']
-  const useDataDetail: typeof import('../compositions/useDataDetail/index')['useDataDetail']
-  const useListData: typeof import('../compositions/useListData/index')['useListData']
-  const usePageExpose: typeof import('../compositions/usePageExpose/index')['usePageExpose']
-  const useQuery: typeof import('../compositions/useQuery/index')['useQuery']
-  const useRouter: typeof import('../compositions/useRouter/index')['useRouter']
+  const useDataDetail: typeof import('../composables/useDataDetail/index')['useDataDetail']
+  const useListData: typeof import('../composables/useListData/index')['useListData']
+  const usePageExpose: typeof import('../composables/usePageExpose/index')['usePageExpose']
+  const useQuery: typeof import('../composables/useQuery/index')['useQuery']
+  const useRouter: typeof import('../composables/useRouter/index')['useRouter']
   const useSlots: typeof import('vue')['useSlots']
-  const useVModel: typeof import('../compositions/useVModel/index')['useVModel']
+  const useVModel: typeof import('../composables/useVModel/index')['useVModel']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -179,7 +175,4 @@ declare global {
   // @ts-ignore
   export type { Component, ComponentPublicInstance, ComputedRef, ExtractDefaultPropTypes, ExtractPropTypes, ExtractPublicPropTypes, InjectionKey, PropType, Ref, VNode, WritableComputedRef } from 'vue'
   import('vue')
-  // @ts-ignore
-  export type { DictData, PageIdentifier, ListDataState, ListDataStatusListType, ListActions } from 'src/compositions'
-  import('src/compositions')
 }

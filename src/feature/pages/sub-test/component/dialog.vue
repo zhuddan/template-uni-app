@@ -35,7 +35,6 @@ function handleClick() {
   <view>
     子包测试页-Dialog2 ---
     {{ data }}---{{ number }}
-
     <button @click="handleClick">
       子组件修改 - 1
     </button>

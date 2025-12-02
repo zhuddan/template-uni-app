@@ -51,6 +51,7 @@
   },
   "typescript.tsdk": "node_modules\\typescript\\lib",
   "cSpell.words": [
-    "dcloudio"
+    "dcloudio",
+    "unplugin"
   ]
 }

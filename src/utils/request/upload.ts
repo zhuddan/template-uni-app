@@ -1,5 +1,5 @@
-import type { ResponseResult } from '@zd~/request/shared'
 import { getCacheToken } from '../cache/index'
+import type { GetResponseConfig } from './shared'
 import type { HttpRequestUserConfig } from './util'
 import { tokenKey, tokenKeyScheme } from './util'
 
@@ -14,7 +14,7 @@ export interface UploadFileBaseConfig extends Partial<UniNamespace.UploadFileOpt
   ignoreLoading?: boolean
 }
 
-export type isReturnNativeResponseUploadFileOption = UploadFileBaseConfig & { getResponse: true }
+export type isReturnNativeResponseUploadFileOption = UploadFileBaseConfig & GetResponseConfig
 
 interface UploadFileResult<T extends object = object> {
   /**
@@ -79,8 +79,7 @@ export async function upload<T extends object = object>(config: UploadFileBaseCo
       }
       throw new Error(result.msg)
     }
-
-    return result
+    return result as T
   }
   catch (error: any) {
     if (config.showErrorMsg) {

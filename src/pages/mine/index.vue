@@ -3,9 +3,9 @@
 </script>
 
 <template>
-  <view>
+  <image>
     222
-  </view>
+  </image>
 </template>
 
 <route lang="json">

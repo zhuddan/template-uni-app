@@ -35,33 +35,21 @@ export default defineConfig(({ mode, command }) => {
       imports: [
         'vue',
         'uni-app',
-        {
-          from: 'src/compositions',
-          imports: [
-            'DictData',
-            'PageIdentifier',
-            'ListDataState',
-            'ListDataStatusListType',
-            'ListActions',
-          ],
-          type: true,
-        },
-
       ],
       dts: './src/types/auto-imports.d.ts',
       dirs: [
-        'src/compositions',
+        'src/composables/**/*.ts',
         'src/utils',
       ],
     }),
     mode === 'production'
       ? visualizer({
-        gzipSize: true,
-        brotliSize: true,
-        emitFile: false,
-        filename: path.resolve(__dirname, `./build/stats.html`), // 分析图生成的文件名
-        open: true, // 如果存在本地服务端口，将在打包后自动展示
-      })
+          gzipSize: true,
+          brotliSize: true,
+          emitFile: false,
+          filename: path.resolve(__dirname, `./build/stats.html`), // 分析图生成的文件名
+          open: true, // 如果存在本地服务端口，将在打包后自动展示
+        })
       : null,
     Icons({
       compiler: 'vue3',

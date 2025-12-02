@@ -4,6 +4,7 @@
     "lib": ["esnext", "dom"],
     "baseUrl": ".",
     "rootDir": ".",
+    "moduleResolution": "Bundler",
     "paths": {
       "@/*": ["./src/*"]
     },
@@ -25,6 +26,7 @@
   "include": [
     "src/**/*.vue",
     "src/**/*",
-    "scripts/**/*.ts"
-, "scripts/utils/logger.ts"  ]
+    "scripts/**/*.ts",
+    "scripts/utils/logger.ts"
+  ]
 }

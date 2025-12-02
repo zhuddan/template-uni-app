@@ -11,6 +11,17 @@
       "^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
     }
   },
+  "subPackages": [
+    {
+      "root": "feature",
+      "pages": [
+        {
+          "path": "pages/sub-test/index"
+        }
+      ]
+    }
+  ],
+  "__esModule": true,
   "pages": [
     {
       "path": "pages/home/index",
@@ -26,6 +37,5 @@
         "navigationBarTitleText": "home"
       }
     }
-  ],
-  "subPackages": []
+  ]
 }

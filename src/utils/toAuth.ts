@@ -1,7 +1,6 @@
 import { removeCacheToken } from './cache'
 import { logger } from './helpers/logger'
 import { debounce } from './helpers/debounce-throttle'
-import { useRouter } from '@/compositions/useRouter/index'
 
 export const toAuth = debounce(() => {
   // const router = useRouter()

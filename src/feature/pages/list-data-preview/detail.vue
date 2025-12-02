@@ -1,8 +1,8 @@
 <route  lang="json">
-    {
-      "style": { "navigationBarTitleText": "日志详情" }
-    }
-  </route>
+  {
+    "style": { "navigationBarTitleText": "日志详情" }
+  }
+</route>
 
 <script setup lang="ts">
 import { getGen } from '@/api/list-data-preview'
